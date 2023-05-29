@@ -5,10 +5,7 @@ const spinner = document.querySelector(".js-spinner")
 const url = "https://en.wikipedia.org/?curid=${resultante.pageid}";
 const endpoint = "https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=20&srsearch=${searchQuery}";
 
-
 form.addEventListener('submit', handleSubmit);
-
-
 async function handleSubmit(e){
     e.preventDefault();
     const input = searchEl.value;
@@ -18,7 +15,6 @@ async function handleSubmit(e){
         alert("rentre chez ta mere")
     }
     displaySearch(a);
-
 }
 
 async function getWikipedia(searchQuery){
